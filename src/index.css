@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-buddy-container::before,
+.task-buddy-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.task-buddy-container::before {
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  left: -200px;
+  background-color: rgba(123, 31, 162, 0.1); /* Light purple */
+}
+
+.task-buddy-container::after {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -150px;
+  background-color: rgba(123, 31, 162, 0.2); /* Medium purple */
+}
+
+.task-buddy-container .circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 50px;
+  background-color: rgba(123, 31, 162, 0.3); /* Darker purple */
+  border-radius: 50%;
+  z-index: -1;
+}
